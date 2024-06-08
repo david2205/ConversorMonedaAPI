@@ -22,16 +22,25 @@ public class Run {
     }
 
     public static void opcion2() {
-        System.out.println("Has seleccionado la Opción 2");
+        System.out.println("ingrese la cantidad para hacer el cambio: ");
+        cambio = scanner.nextInt();
+        Moneda moneda1=consulta.buscaMoneda("HUF");
+        System.out.println("La Coversion de Foringo Hungaro a Peso Jamaiquino es "+(moneda1.getConversionRate("JMD")*cambio));
     }
 
     public static void opcion3() {
-        System.out.println("Has seleccionado la Opción 3");
+        System.out.println("ingrese la cantidad para hacer el cambio: ");
+        cambio = scanner.nextInt();
+        Moneda moneda1=consulta.buscaMoneda("NGN");
+        System.out.println("La Coversion de Naira a riyal Saudi es "+(moneda1.getConversionRate("SAR")*cambio));
 
     }
 
     public static void opcion4() {
-        System.out.println("Has seleccionado la Opción 3");
+        System.out.println("ingrese la cantidad para hacer el cambio: ");
+        cambio = scanner.nextInt();
+        Moneda moneda1=consulta.buscaMoneda("TWD");
+        System.out.println("La Coversion de Dolar Taiwanes a Dolar Simbawuense es "+(moneda1.getConversionRate("ZWL")*cambio));
 
     }
 
